@@ -13,6 +13,6 @@ class LandmarkApp : Application() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
         landmarksStore = LandmarkMemStore()
-        Timber.i("Landmark Application Started")
+        Timber.i("landmark Application Started")
     }
 }

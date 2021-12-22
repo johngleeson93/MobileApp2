@@ -3,9 +3,9 @@ package ie.wit.landmark.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import ie.wit.landmark.R
+import ie.wit.landmark.databinding.CardLandmarkBinding
 import ie.wit.landmark.models.LandmarkModel
-import landmark.R
-import landmark.databinding.CardLandmarkBinding
 
 class LandmarkAdapter constructor(private var landmarks: List<LandmarkModel>)
     : RecyclerView.Adapter<LandmarkAdapter.MainHolder>() {
@@ -18,17 +18,17 @@ class LandmarkAdapter constructor(private var landmarks: List<LandmarkModel>)
     }
 
     override fun onBindViewHolder(holder: MainHolder, position: Int) {
-        val donation = landmarks[holder.adapterPosition]
-        holder.bind(donation)
+        val landmark = landmarks[holder.adapterPosition]
+        holder.bind(landmark)
     }
 
     override fun getItemCount(): Int = landmarks.size
 
     inner class MainHolder(val binding : CardLandmarkBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(donation: LandmarkModel) {
-            binding.paymentamount.text = donation.amount.toString()
-            binding.paymentmethod.text = donation.paymentmethod
+        fun bind(landmark: LandmarkModel) {
+            binding.paymentamount.text = landmark.amount.toString()
+            binding.paymentmethod.text = landmark.paymentmethod
             binding.imageIcon.setImageResource(R.mipmap.ic_launcher_round)
         }
     }

@@ -29,6 +29,6 @@ class LandmarkMemStore : LandmarkStore {
 
     fun logAll() {
         Timber.v("** Landmarks List **")
-        landmarks.forEach { Timber.v("Landmark ${it}") }
+        landmarks.forEach { Timber.v("landmark ${it}") }
     }
 }
