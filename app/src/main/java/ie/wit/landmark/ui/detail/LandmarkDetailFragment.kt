@@ -1,34 +1,69 @@
 package ie.wit.landmark.ui.detail
 
+import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import ie.wit.landmark.R
+import ie.wit.landmark.ui.auth.LoggedInViewModel
+import ie.wit.landmark.ui.report.ReportViewModel
+import landmark.databinding.FragmentLandmarkDetailBinding
+import timber.log.Timber
 
 class LandmarkDetailFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = LandmarkDetailFragment()
-    }
+    private lateinit var detailViewModel: LandmarkDetailViewModel
+    private val args by navArgs<LandmarkDetailFragmentArgs>()
+    private var _fragBinding: FragmentLandmarkDetailBinding? = null
+    private val fragBinding get() = _fragBinding!!
+    private val loggedInViewModel : LoggedInViewModel by activityViewModels()
+    private val reportViewModel : ReportViewModel by activityViewModels()
 
-    private lateinit var viewModel: LandmarkDetailViewModel
-    private val args by navArgs<LandmarkDetailFragment>()
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                            savedInstanceState: Bundle?
     ): View? {
+        _fragBinding = FragmentLandmarkDetailBinding.inflate(inflater, container, false)
+        val root = fragBinding.root
 
-        val view = inflater.inflate(R.layout.fragment_landmark_detail, container, false)
+        detailViewModel = ViewModelProvider(this).get(LandmarkDetailViewModel::class.java)
+        detailViewModel.observableLandmark.observe(viewLifecycleOwner, Observer { render() })
 
-        Toast.makeText(context,"Landmark ID Selected : ${args.landmarkid}",Toast.LENGTH_LONG).show()
+        fragBinding.editLandmarkButton.setOnClickListener {
+            detailViewModel.updateLandmark(loggedInViewModel.liveFirebaseUser.value?.uid!!,
+            args.landmarkid, fragBinding.landmarkvm?.observableLandmark!!.value!!)
+            //Force Reload of list to guarantee refresh
+            reportViewModel.load()
+            findNavController().navigateUp()
+            //findNavController().popBackStack()
 
-        return view
+                }
+
+        fragBinding.deleteLandmarkButton.setOnClickListener {
+            reportViewModel.delete(loggedInViewModel.liveFirebaseUser.value?.uid!!,
+                            detailViewModel.observableLandmark.value?.uid!!)
+            findNavController().navigateUp()
+        }
+        return root
     }
 
+    private fun render() {
+        fragBinding.landmarkvm = detailViewModel
+        Timber.i("Retrofit fragBinding.landmarkvm == $fragBinding.landmarkvm")
+    }
 
+    override fun onResume() {
+        super.onResume()
+        detailViewModel.getLandmark(loggedInViewModel.liveFirebaseUser.value?.uid!!,
+                        args.landmarkid)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _fragBinding = null
+    }
 }

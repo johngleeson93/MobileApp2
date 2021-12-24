@@ -5,7 +5,7 @@
     android:id="@+id/donateFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.landmark.LandmarkFragment">
+    tools:context="ie.wit.landmark.ui.LandmarkFragment">
 
     <TextView
         android:id="@+id/landmarkTitle"
@@ -31,8 +31,8 @@
         android:id="@+id/landmarkSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/donateTitle"
-        android:layout_alignEnd="@+id/donateTitle"
+        android:layout_below="@+id/landmarkTitle"
+        android:layout_alignEnd="@+id/landmarkTitle"
         android:layout_alignParentStart="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -70,7 +70,7 @@
         android:layout_width="181dp"
         android:layout_height="128dp"
         android:layout_above="@+id/progressBar"
-        android:layout_below="@+id/donateSubtitle"
+        android:layout_below="@+id/landmarkSubtitle"
         android:layout_alignParentStart="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -103,7 +103,7 @@
         android:id="@+id/amountPicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/donateSubtitle"
+        android:layout_alignEnd="@+id/landmarkSubtitle"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"

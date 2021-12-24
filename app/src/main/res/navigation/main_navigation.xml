@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/reportFragment"
-        android:name="landmark.ui.report.ReportFragment"
+        android:name="ie.wit.landmark.ui.report.ReportFragment"
         android:label="@string/action_report"
         tools:layout="@layout/fragment_report" >
         <action
@@ -32,19 +32,19 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="landmark.ui.about.AboutFragment"
+        android:name="ie.wit.landmark.ui.about.AboutFragment"
         android:label="@string/action_about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/landmarkDetailFragment"
-        android:name="landmark.ui.detail.LandmarkDetailFragment"
+        android:name="ie.wit.landmark.ui.detail.LandmarkDetailFragment"
         android:label="Landmark Detail"
         tools:layout="@layout/fragment_landmark_detail" >
         <action
-            android:id="@+id/action_LandmarkDetailFragment_to_reportFragment"
+            android:id="@+id/action_landmarkDetailFragment_to_reportFragment"
             app:destination="@id/reportFragment" />
         <argument
             android:name="landmarkid"
-            app:argType="long" />
+            app:argType="string" />
     </fragment>
 </navigation>
