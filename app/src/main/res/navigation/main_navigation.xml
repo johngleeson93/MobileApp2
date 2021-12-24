@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/landmarkFragment">
+    app:startDestination="@id/reportFragment">
 
     <fragment
         android:id="@+id/landmarkFragment"
-        android:name="ie.wit.landmark.fragments.LandmarkFragment"
+        android:name="ie.wit.landmark.ui.landmark.LandmarkFragment"
         android:label="@string/action_landmark"
         tools:layout="@layout/fragment_landmark" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/reportFragment"
-        android:name="ie.wit.landmark.fragments.ReportFragment"
+        android:name="landmark.ui.report.ReportFragment"
         android:label="@string/action_report"
         tools:layout="@layout/fragment_report" >
         <action
@@ -26,5 +26,25 @@
             app:destination="@id/landmarkFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_reportFragment_to_landmarkDetailFragment"
+            app:destination="@id/landmarkDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="landmark.ui.about.AboutFragment"
+        android:label="@string/action_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/landmarkDetailFragment"
+        android:name="landmark.ui.detail.LandmarkDetailFragment"
+        android:label="Landmark Detail"
+        tools:layout="@layout/fragment_landmark_detail" >
+        <action
+            android:id="@+id/action_LandmarkDetailFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <argument
+            android:name="landmarkid"
+            app:argType="long" />
     </fragment>
 </navigation>

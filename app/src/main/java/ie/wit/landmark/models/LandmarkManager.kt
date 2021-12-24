@@ -8,9 +8,9 @@ internal fun getId(): Long {
     return lastId++
 }
 
-class LandmarkMemStore : LandmarkStore {
+object LandmarkManager : LandmarkStore {
 
-    val landmarks = ArrayList<LandmarkModel>()
+    private val landmarks = ArrayList<LandmarkModel>()
 
     override fun findAll(): List<LandmarkModel> {
         return landmarks
@@ -29,6 +29,6 @@ class LandmarkMemStore : LandmarkStore {
 
     fun logAll() {
         Timber.v("** Landmarks List **")
-        landmarks.forEach { Timber.v("landmark ${it}") }
+        landmarks.forEach { Timber.v("Landmark ${it}") }
     }
 }
