@@ -18,7 +18,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.DonationX.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Landmark.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Landmark.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
@@ -41,7 +41,7 @@
     <!-- Light EditTexts -->
     <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.AppCompat.Dark"/>
 
-    <style name="ThemeOverlay.MyTextDetail" parent="Theme.DonationX">
+    <style name="ThemeOverlay.MyTextDetail" parent="Theme.Landmark">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fadeScrollbars">true</item>
@@ -52,12 +52,12 @@
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="ThemeOverlay.FirebaseIcon" parent="Theme.DonationX">
+    <style name="ThemeOverlay.FirebaseIcon" parent="Theme.Landmark">
         <item name="android:layout_marginTop">@dimen/icon_top_margin</item>
         <item name="android:layout_marginBottom">@dimen/icon_bottom_margin</item>
     </style>
 
-    <style name="ThemeOverlay.MyTitleText" parent="Theme.DonationX">
+    <style name="ThemeOverlay.MyTitleText" parent="Theme.Landmark">
         <item name="android:gravity">center</item>
         <item name="android:textSize">30sp</item>
     </style>

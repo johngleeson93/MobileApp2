@@ -22,8 +22,8 @@ object FirebaseDBManager : LandmarkStore {
                     val localList = ArrayList<LandmarkModel>()
                     val children = snapshot.children
                     children.forEach {
-                        val donation = it.getValue(LandmarkModel::class.java)
-                        localList.add(donation!!)
+                        val landmark = it.getValue(LandmarkModel::class.java)
+                        localList.add(landmark!!)
                     }
                     database.child("landmarks")
                         .removeEventListener(this)
