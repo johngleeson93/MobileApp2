@@ -23,8 +23,8 @@ import ie.wit.landmark.ui.auth.Login
 import ie.wit.landmark.utils.readImageUri
 import ie.wit.landmark.utils.showImagePicker
 import landmark.R
-import landmark.databinding.HomeBinding
 import landmark.databinding.NavHeaderBinding
+import landmark.databinding.HomeBinding
 import timber.log.Timber
 
 class Home : AppCompatActivity() {

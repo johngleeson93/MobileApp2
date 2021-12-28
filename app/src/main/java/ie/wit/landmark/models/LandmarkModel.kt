@@ -9,9 +9,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class LandmarkModel(
         var uid: String? = "",
-        var paymentmethod: String = "N/A",
-        var amount: Int = 0,
-        var message: String = "Homer for President!",
+        var message: String = "Add a Landmark",
         var upvotes: Int = 0,
         var profilepic: String = "",
         var email: String? = "joe@bloggs.com")
@@ -21,8 +19,6 @@ data class LandmarkModel(
         fun toMap(): Map<String, Any?> {
                 return mapOf(
                         "uid" to uid,
-                        "paymentmethod" to paymentmethod,
-                        "amount" to amount,
                         "message" to message,
                         "upvotes" to upvotes,
                         "profilepic" to profilepic,

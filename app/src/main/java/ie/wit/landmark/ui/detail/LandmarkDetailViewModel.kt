@@ -17,7 +17,6 @@ class LandmarkDetailViewModel : ViewModel() {
 
     fun getLandmark(userid:String, id: String) {
         try {
-            //LandmarkManager.findById(email, id, landmark)
             FirebaseDBManager.findById(userid, id, landmark)
             Timber.i("Detail getLandmark() Success : ${
                 landmark.value.toString()}")
@@ -29,7 +28,6 @@ class LandmarkDetailViewModel : ViewModel() {
 
     fun updateLandmark(userid:String, id: String, landmark: LandmarkModel) {
         try {
-            //LandmarkManager.update(email, id, landmark)
             FirebaseDBManager.update(userid, id, landmark)
             Timber.i("Detail update() Success : $landmark")
         }

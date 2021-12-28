@@ -1,17 +1,9 @@
 <resources>
     <string name="app_name">Landmark</string>
     <string name="landmarkTitle">Welcome</string>
-    <string name="landmarkSubtitle">Please Give Generously</string>
+    <string name="landmarkSubtitle">Please create a landmark</string>
     <string name="landmarkButton">Landmark</string>
-    <string name="paypal">PayPal</string>
-    <string name="direct">Direct</string>
-    <string name="amount">Amount</string>
-    <string name="total">Total so Far</string>
-    <string name="totalSoFar">$ %1$d</string>
     <string name="reportTitle">Landmarks Report</string>
-    <string name="defaultAmount">00</string>
-    <string name="defaultMethod">N/A</string>
-    <string name="enter_amount">Enter Amount</string>
     <string name="action_landmark">Landmark</string>
     <string name="action_report">Report</string>
 
@@ -20,12 +12,12 @@
     <string name="group_communicate">Communicate</string>
 
     <string name="nav_header_title">Landmark</string>
-    <string name="nav_header_subtitle">voteforhomer@android.com</string>
+    <string name="nav_header_subtitle">Landmark</string>
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="action_about">About Us</string>
     <string name="aboutus_title">Homer for President !!</string>
-    <string name="aboutus_message">Hi, I\'m Homer\n\nPlease vote for me.\n\n Please Please Please Please!!</string>
+    <string name="aboutus_message">Hi please create a landmark</string>
 
     <string name="landmarksNotFound">No Landmarks Yet…\nGo Make a Landmark!</string>
     <string name="landmarkError">Error : Couldn\'t Make a landmark…</string>
@@ -36,7 +28,7 @@
     <string name="message">Message :</string>
     <string name="upvotes">UpVotes :</string>
 
-    <string name="messageLoading">Please Wait while the landmarks are Loading...</string>
+    <string name="messageLoading">Please Wait while the landmarks are Loading…</string>
 
     <!-- START Firebase Resources-->
 

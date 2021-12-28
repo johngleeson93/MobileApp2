@@ -26,12 +26,12 @@ class LandmarkDetailFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                             savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _fragBinding = FragmentLandmarkDetailBinding.inflate(inflater, container, false)
         val root = fragBinding.root
 
-        detailViewModel = ViewModelProvider(this).get(LandmarkDetailViewModel::class.java)
-        detailViewModel.observableLandmark.observe(viewLifecycleOwner, Observer { render() })
+        detailViewModel = ViewModelProvider(this)[LandmarkDetailViewModel::class.java]
+        detailViewModel.observableLandmark.observe(viewLifecycleOwner, { render() })
 
         fragBinding.editLandmarkButton.setOnClickListener {
             detailViewModel.updateLandmark(loggedInViewModel.liveFirebaseUser.value?.uid!!,
