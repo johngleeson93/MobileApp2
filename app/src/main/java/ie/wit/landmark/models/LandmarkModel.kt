@@ -1,30 +1,21 @@
 package ie.wit.landmark.models
 
 import android.os.Parcelable
-import com.google.firebase.database.Exclude
-import com.google.firebase.database.IgnoreExtraProperties
-import kotlinx.parcelize.Parcelize
+import androidx.room.Embedded
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import kotlinx.android.parcel.Parcelize
 
-@IgnoreExtraProperties
 @Parcelize
-data class LandmarkModel(
-        var uid: String? = "",
-        var message: String = "Add a Landmark",
-        var upvotes: Int = 0,
-        var profilepic: String = "",
-        var email: String? = "joe@bloggs.com")
-        : Parcelable
-{
-        @Exclude
-        fun toMap(): Map<String, Any?> {
-                return mapOf(
-                        "uid" to uid,
-                        "message" to message,
-                        "upvotes" to upvotes,
-                        "profilepic" to profilepic,
-                        "email" to email
-                )
-        }
-}
+@Entity
+data class LandmarkModel(@PrimaryKey(autoGenerate = true) var id: Long = 0,
+                         var fbId: String = "",
+                         var title: String = "",
+                         var description: String = "",
+                         var image: String = "",
+                         @Embedded var location : Location = Location()): Parcelable
 
-
+@Parcelize
+data class Location(var lat: Double = 0.0,
+                    var lng: Double = 0.0,
+                    var zoom: Float = 0f) : Parcelable

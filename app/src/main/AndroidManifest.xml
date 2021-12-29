@@ -2,26 +2,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="landmark">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name="ie.wit.landmark.main.LandmarkApp"
+        android:name="ie.wit.landmark.main.MainApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Landmark">
-        <activity android:name="ie.wit.landmark.ui.auth.Login"
+
+        <activity android:name="ie.wit.landmark.views.login.LoginView"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTop"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ie.wit.landmark.ui.home.Home">
+
+        <activity
+            android:name="ie.wit.landmark.views.map.LandmarkMapView"
+            android:exported="true"
+            android:label="@string/title_activity_landmark_maps"
+            android:theme="@style/Theme.Landmark.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="ie.wit.landmark.views.location.EditLocationView"
+            android:exported="true"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name="ie.wit.landmark.views.landmarklist.LandmarkListView"
+            android:exported="true">
         </activity>
+        <activity android:name="ie.wit.landmark.views.landmark.LandmarkView" />
     </application>
 
 </manifest>
