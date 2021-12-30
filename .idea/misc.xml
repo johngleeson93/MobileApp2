@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/johng/Desktop/MobileApp2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3769230769230769" />
+        <entry key="..\:/Users/johng/Desktop/MobileApp2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/johng/Desktop/MobileApp2/app/src/main/res/layout/activity_landmark_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/johng/Desktop/MobileApp2/app/src/main/res/layout/activity_landmark_maps.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/johng/Desktop/MobileApp2/app/src/main/res/layout/card_placemark.xml" value="0.36666666666666664" />
