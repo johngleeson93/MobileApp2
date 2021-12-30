@@ -5,9 +5,10 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d7ebab1b8bb99cd0d50557c981f95e7b/transformed/jetified-timberkt-1.5.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d7ebab1b8bb99cd0d50557c981f95e7b/transformed/jetified-timberkt-1.5.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.android/caches/transforms-3/d7ebab1b8bb99cd0d50557c981f95e7b/transformed/jetified-timberkt-1.5.1/res" />
-      <root url="jar://$USER_HOME$/.android/caches/transforms-3/c399de12f1cd490c7a767cdb1ffecb2b/transformed/jetified-timberkt-1.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.android/caches/transforms-3/c399de12f1cd490c7a767cdb1ffecb2b/transformed/jetified-timberkt-1.5.1/res" />
-      <root url="file://$USER_HOME$/.android/caches/transforms-3/c399de12f1cd490c7a767cdb1ffecb2b/transformed/jetified-timberkt-1.5.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/caches/transforms-3/a6eea0419797d977ae2bf54f4d5d66f5/transformed/jetified-timberkt-1.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/caches/transforms-3/a6eea0419797d977ae2bf54f4d5d66f5/transformed/jetified-timberkt-1.5.1/res" />
+      <root url="file://$USER_HOME$/.android/caches/transforms-3/a6eea0419797d977ae2bf54f4d5d66f5/transformed/jetified-timberkt-1.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.android/caches/modules-2/files-2.1/com.github.ajalt/timberkt/1.5.1/a5f412f9b223ee196d5f6da1afcab50199209705/timberkt-1.5.1-javadoc.jar!/" />
