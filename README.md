@@ -26,3 +26,5 @@ Features
 Persistent Storage
   This app utilises read/write to JSON file. Landmarks can be viewed via device file explorer inside Android Studio.
   
+Developer Experience (DX)
+  
