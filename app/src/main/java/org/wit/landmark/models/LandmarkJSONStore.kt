@@ -11,8 +11,8 @@ import java.util.*
 
 const val JSON_FILE = "landmarks.json"
 val gsonBuilder: Gson = GsonBuilder().setPrettyPrinting()
-                 .registerTypeAdapter(Uri::class.java, UriParser())
-                 .create()
+    .registerTypeAdapter(Uri::class.java, UriParser())
+    .create()
 val listType: Type = object : TypeToken<ArrayList<LandmarkModel>>() {}.type
 
 fun generateRandomId(): Long {
@@ -43,21 +43,26 @@ class LandmarkJSONStore(private val context: Context) : LandmarkStore {
 
     override fun update(landmark: LandmarkModel) {
         val landmarksList = findAll() as ArrayList<LandmarkModel>
-        var foundlandmark: LandmarkModel? = landmarksList.find { p -> p.id == landmark.id }
-        if (foundlandmark != null) {
-            foundlandmark.title = landmark.title
-            foundlandmark.description = landmark.description
-            foundlandmark.image = landmark.image
-            foundlandmark.lat = landmark.lat
-            foundlandmark.lng = landmark.lng
-            foundlandmark.zoom = landmark.zoom
+        var foundLandmark: LandmarkModel? = landmarksList.find { p -> p.id == landmark.id }
+        if (foundLandmark != null) {
+            foundLandmark.title = landmark.title
+            foundLandmark.description = landmark.description
+            foundLandmark.image = landmark.image
+            foundLandmark.lat = landmark.lat
+            foundLandmark.lng = landmark.lng
+            foundLandmark.zoom = landmark.zoom
         }
         serialize()
     }
 
     override fun delete(landmark: LandmarkModel) {
-        landmarks.remove(landmark)
+        val foundLandmark: LandmarkModel? = landmarks.find { it.id == landmark.id }
+        landmarks.remove(foundLandmark)
         serialize()
+    }
+    override fun findById(id:Long) : LandmarkModel? {
+        val foundLandmark: LandmarkModel? = landmarks.find { it.id == id }
+        return foundLandmark
     }
 
     private fun serialize() {

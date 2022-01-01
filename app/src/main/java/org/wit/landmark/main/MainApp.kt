@@ -14,6 +14,8 @@ class MainApp : Application() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
         landmarks = LandmarkJSONStore(applicationContext)
+
         i("Landmark started")
+
     }
 }

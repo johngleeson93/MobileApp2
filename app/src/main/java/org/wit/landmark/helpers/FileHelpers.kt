@@ -43,3 +43,4 @@ fun exists(context: Context, filename: String): Boolean {
     val file = context.getFileStreamPath(filename)
     return file.exists()
 }
+

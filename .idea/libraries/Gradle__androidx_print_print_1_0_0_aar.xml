@@ -1,14 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.print:print:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9b06182434f195f185a11634c37e9fa4/transformed/print-1.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/83a821c5ed854de3bf4d1e5fa7440a04/transformed/print-1.0.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.android/caches/transforms-3/3c000058da4d0d0ca0000b1129f4604a/transformed/print-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9b06182434f195f185a11634c37e9fa4/transformed/print-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b06182434f195f185a11634c37e9fa4/transformed/print-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b06182434f195f185a11634c37e9fa4/transformed/print-1.0.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.android/caches/transforms-3/9b06182434f195f185a11634c37e9fa4/transformed/print-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/83a821c5ed854de3bf4d1e5fa7440a04/transformed/print-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/83a821c5ed854de3bf4d1e5fa7440a04/transformed/print-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/83a821c5ed854de3bf4d1e5fa7440a04/transformed/print-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/caches/transforms-3/83a821c5ed854de3bf4d1e5fa7440a04/transformed/print-1.0.0/res" />
       <root url="file://$USER_HOME$/.android/caches/transforms-3/43037c0b2dd43be656c119826bff6d23/transformed/print-1.0.0/res" />
       <root url="jar://$USER_HOME$/.android/caches/transforms-3/3c000058da4d0d0ca0000b1129f4604a/transformed/print-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.android/caches/transforms-3/3c000058da4d0d0ca0000b1129f4604a/transformed/print-1.0.0/AndroidManifest.xml" />

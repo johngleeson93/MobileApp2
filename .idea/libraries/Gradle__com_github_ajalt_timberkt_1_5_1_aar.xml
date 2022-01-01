@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.ajalt:timberkt:1.5.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d7ebab1b8bb99cd0d50557c981f95e7b/transformed/jetified-timberkt-1.5.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d7ebab1b8bb99cd0d50557c981f95e7b/transformed/jetified-timberkt-1.5.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d7ebab1b8bb99cd0d50557c981f95e7b/transformed/jetified-timberkt-1.5.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.android/caches/transforms-3/d7ebab1b8bb99cd0d50557c981f95e7b/transformed/jetified-timberkt-1.5.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/770ac71841df9c88b716f7c71a3afdbe/transformed/jetified-timberkt-1.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/770ac71841df9c88b716f7c71a3afdbe/transformed/jetified-timberkt-1.5.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/770ac71841df9c88b716f7c71a3afdbe/transformed/jetified-timberkt-1.5.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/caches/transforms-3/770ac71841df9c88b716f7c71a3afdbe/transformed/jetified-timberkt-1.5.1/res" />
       <root url="file://$USER_HOME$/.android/caches/transforms-3/c399de12f1cd490c7a767cdb1ffecb2b/transformed/jetified-timberkt-1.5.1/res" />
       <root url="jar://$USER_HOME$/.android/caches/transforms-3/a6eea0419797d977ae2bf54f4d5d66f5/transformed/jetified-timberkt-1.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.android/caches/transforms-3/a6eea0419797d977ae2bf54f4d5d66f5/transformed/jetified-timberkt-1.5.1/res" />
