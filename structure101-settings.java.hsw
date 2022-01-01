@@ -13,16 +13,16 @@
   <property name="project-type" value="classpath" />
   <property name="hide-externals" value="true" />
   <classpath>
-    <classpathentry kind="lib" path="app/build/intermediates/javac/debug/classes" module="Placemark___app" displaymodule="Placemark.app" />
+    <classpathentry kind="lib" path="app/build/intermediates/javac/debug/classes" module="Landmark___app" displaymodule="Landmark.app" />
   </classpath>
   <pom-root-files />
   <modules>
-    <module name="Placemark___app" kind="ide-project" />
+    <module name="Landmark___app" kind="ide-project" />
     <module name="Placemark" kind="ide-project" />
   </modules>
   <modules-in-scope>
-    <module name="Placemark___app" />
-    <module name="Placemark" />
+    <module name="Landmark___app" />
+    <module name="Landmark" />
   </modules-in-scope>
   <excludes>
     <exclude expression="*.*&amp;amp;*" active="true" />
