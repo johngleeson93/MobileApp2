@@ -50,3 +50,10 @@ Class Diagram
 
   ![alt text](Screenshots/Class-diagram.png)
   
+Personal Statement
+
+  Here I have compiled an app guided by the labs and when I tried to do anything off of the current labs topic
+  it would entirely break the app and I could not fix it at all. I understand the aspect of trying to learn and
+  fix the code as you go but I found that I could not at all. The code is similar to some parts of the labs as if I were to submit
+  code and my attempts at firebase and auth and db it would not have passed as it always said authentication failed and would not pass
+  the login/register.
