@@ -25,18 +25,27 @@ Features
 
 Persistent Storage
   This app utilises read/write to JSON file. Landmarks can be viewed via device file explorer inside Android Studio.
+
   ![alt text](Screenshots/JSON.png)
+
 Full CRUD Functionality
   ![alt text](Screenshots/Delete.png)
+
   ![alt text](Screenshots/Edit.png)
 
   The Landmarks and images can be uploaded, edited and deleted fro, Picasso mage library.
+
   ![alt text](Screenshots/EditImage.png)
+
 Developer Experience (DX)
+
   The app utilises Model view presenter architectural pattern.
+
   ![alt text](Screenshots/MVP.png)
 
 Class Diagram
+
   Here is a basic version of a class diagram for the mvp pattern for this landmark project. 
+
   ![alt text](Screenshots/Class Diagram.png)
   
