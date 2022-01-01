@@ -48,5 +48,5 @@ Class Diagram
 
   Here is a basic version of a class diagram for the mvp pattern for this landmark project. 
 
-  ![alt text](Screenshots/Class Diagram.png)
+  ![alt text](Screenshots/Class-diagram.png)
   
